@@ -10,7 +10,7 @@ function Me() {
         className="w-full  h-[450px] lg:h-[400px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5"
         
       >
-        <img src="src/assets/provisional.jpg" className="w-full h-full  object-cover object-top transition-transform duration-500 ease-in-out transform hover:scale-110 "/>
+        <img src="/portfolio/provisional.jpg" className="w-full h-full  object-cover object-top transition-transform duration-500 ease-in-out transform hover:scale-110 "/>
       </div>
       <div className="">
       <Title title={"Design that sparks engagement and inspires action"} position={"lg:text-left"}/>

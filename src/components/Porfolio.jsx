@@ -22,7 +22,7 @@ function Porfolio() {
 
       <div className="lg:grid lg:grid-cols-2 flex flex-col lg:flex-row lg:gap-x-10 lg:items-center mt-10">
         
-        <Image url={"src/assets/kanbanease.jpg"} />
+        <Image url={"/portfolio/kanbanease.jpg"} />
         
         <div className="flex flex-col mt-4 items-center">
           <TitleMini text={"KanbanEase"} />

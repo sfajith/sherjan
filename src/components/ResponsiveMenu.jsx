@@ -28,7 +28,7 @@ const openHandler = () => {
 
   <div className={`relative z-10 flex justify-between items-center p-5 transition-colors duration-300 ease-linear ${open? "bg-[#fff]" : "bg-[#030712]"}`} >
     <div className="flex justify-between w-full items-center xl:w-[92%] 2xl:w-[67.3%] m-auto">
-      <img src={open ? "src/assets/logo.png" : "src/assets/logo-white.png"} alt="" width="100px" />
+      <img src={open ? "/portfolio/logo.png" : "/portfolio/logo-white.png"} alt="" width="100px" />
       <button onClick={openHandler} className={`px-6 py-3 rounded-full border ${open ? 'border-[#030712]' : 'border-white'}`}>
         {open ? <FiMenu className="text-xl text-[#030712]" /> : <MdClose className="text-xl text-white" />}
       </button>
