@@ -47,7 +47,7 @@ function Stack() {
           "A versatile stack that empowers me to create modern and intuitive web experiences"
         }
       />
-      <h3 className="text-2xl font-semibold text-left my-10 font-inter-tight text-[#374151]">
+      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151]">
         Frontend Development
       </h3>
 
@@ -63,7 +63,7 @@ function Stack() {
         ))}
       </div>
 
-      <h3 className="text-2xl font-semibold text-left my-10 font-inter-tight text-[#374151]">
+      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151]">
         Version Control & Deployment
       </h3>
 
@@ -80,7 +80,7 @@ function Stack() {
       </div>
 
 
-      <h3 className="text-2xl font-semibold text-center my-10 font-inter-tight text-[#374151]">
+      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151]">
         Design & Tools
       </h3>
       <div className="grid grid-cols-3  gap-4  font-inter-tight text-[#374151] py-5">
