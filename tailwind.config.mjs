@@ -5,7 +5,7 @@ export default {
 		extend: {
 			screens: {
 				// Agregar breakpoint personalizado para pantallas de 400px o menos
-				'xs': '400px',
+				'xs': '300px',
 			},
 		},
 	},

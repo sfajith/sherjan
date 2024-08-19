@@ -3,6 +3,7 @@ import Subtext from "./Subtext";
 import { IoLogoJavascript } from "react-icons/io";
 import { ImHtmlFive2 } from "react-icons/im";
 import { FaCss3 } from "react-icons/fa6";
+import { SiAstro } from "react-icons/si";
 import { RiReactjsLine, RiTailwindCssFill, RiBootstrapLine } from "react-icons/ri";
 import { TbBrandGithubFilled, TbBrandNextjs } from "react-icons/tb";
 import { BiLogoPostgresql } from "react-icons/bi";
@@ -12,12 +13,12 @@ import { FaWordpress, FaGitAlt } from "react-icons/fa";
 
 function Stack() {
   const frontend = [
-    { id: 1, component: <IoLogoJavascript />, name: "JavaScript" },
-    { id: 2, component: <ImHtmlFive2 />, name: "HTML" },
-    { id: 3, component: <FaCss3 />, name: "CSS" },
+    { id: 1, component: <ImHtmlFive2 />, name: "HTML" },
+    { id: 2, component: <FaCss3 />, name: "CSS" },
+    { id: 3, component: <IoLogoJavascript />, name: "JavaScript" },
     { id: 4, component: <RiReactjsLine />, name: "React" },
     { id: 5, component: <RiTailwindCssFill />, name: "Tailwind CSS" },
-    { id: 6, component: <RiBootstrapLine />, name: "Bootstrap" },
+    { id: 6, component: <SiAstro />, name: "Astro" },
     { id: 7, component: <TbBrandNextjs />, name: "Next.js" },
     { id: 8, component: <SiD3Dotjs />, name: "D3.js" },
   ];
@@ -51,7 +52,7 @@ function Stack() {
         Frontend Development
       </h3>
 
-      <div className="grid grid-cols-3 md:grid-cols-4 gap-4  font-inter-tight text-[#374151] py-5">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4  font-inter-tight text-[#374151] py-5">
         {frontend.map((icon) => (
           <div
             key={icon.id}
@@ -67,7 +68,7 @@ function Stack() {
         Version Control & Deployment
       </h3>
 
-      <div className="grid grid-cols-2 gap-4  font-inter-tight text-[#374151] py-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  font-inter-tight text-[#374151] py-5">
         {version.map((icon) => (
           <div
             key={icon.id}
@@ -83,7 +84,7 @@ function Stack() {
       <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151]">
         Design & Tools
       </h3>
-      <div className="grid grid-cols-3  gap-4  font-inter-tight text-[#374151] py-5">
+      <div className="grid grid-cols-1  sm:grid-cols-3  gap-4  font-inter-tight text-[#374151] py-5">
         {design.map((icon) => (
           <div
             key={icon.id}
