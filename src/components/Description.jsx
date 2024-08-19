@@ -3,8 +3,8 @@ import UpButton from "./UpButton";
 
 function Description() {
   return (
-    <section id="home" className="font-inter-tight p-5 xs:bg-red-400 xl:px-[72px]">
-      <div className="2xl:w-[71.5%] m-auto">
+    <section id="home" className="font-inter-tight p-5 xl:px-[72px]">
+      <div className="">
       <h3 className="text-[22px] md:text-[28px] font-[500] tracking-[0.02em] mb-3 md:pl-1">
         Hello! Glad you're here!
       </h3>
