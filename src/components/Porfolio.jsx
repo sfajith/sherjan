@@ -25,7 +25,7 @@ function Porfolio() {
         <Image url={"/sherjan/kanbanease.jpg"} />
         
         <div className="flex flex-col mt-4 items-center">
-          <TitleMini text={"KanbanEase"} />
+          <h3 className="text-4xl font-semibold font-inter-tight text-center lg:text-left w-full">KanbanEase</h3>
           <Subtext
             text={
               "is a web application that streamlines task management using the Kanban method. It allows users to organize projects into columns and cards, featuring a modern interface and subtle animations.Developed with React and Tailwind CSS, the app includes a drag-and-drop functionality for moving cards between columns. This project demonstrates skills in creating practical and visually appealing solutions, ideal for desktop work environments."
