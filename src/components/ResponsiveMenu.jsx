@@ -1,6 +1,6 @@
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import UpButton from "./UpButton";
 import ArrowButtom from "./ArrowButtom";
 
@@ -13,13 +13,15 @@ function ResponsiveMenu() {
   ];
 
   const [open, setOpen] = useState(true)
-  const openHandler = () =>{
-    if(open){
-        setOpen(false)
-    }else{
-        setOpen(true)
-    }
-  }
+
+useEffect(()=>{
+  setOpen(true)
+},[])
+
+const openHandler = () => {
+  setOpen((prev) => !prev);
+};
+
 
   return (
     <nav className="font-inter-tight relative">
@@ -31,7 +33,6 @@ function ResponsiveMenu() {
         {open ? <FiMenu className="text-xl text-[#030712]" /> : <MdClose className="text-xl text-white" />}
       </button>
     </div>
-
   </div>
  
   <div className={`absolute w-full bg-[#030712] z-0  transition-all duration-300 ease-linear ${open? "-top-[730px]" : "top-[86px]"}`} >
@@ -39,12 +40,14 @@ function ResponsiveMenu() {
     <hr className="border-[#374151]" />
     <div className="pb-5">
       {items.map((item) => (
-        <a href={item.link} key={item.id} className="flex justify-between items-center pr-6 mt-9 mb-5">
+        <div  key={item.id} className="flex justify-between items-center pr-6 mt-9 mb-5">
+          <a href={item.link}>
         <h2  className="text-6xl font-inter-tight font-semibold text-white text-left px-5 tracking-[-.02em] hover:text-[#b6bcc6] transition-color duration-150 ease-linear">
           {item.name} <span className="text-xl text-[#374151] font-medium">{item.numer}</span>
         </h2>
+          </a>
         <ArrowButtom color={"#ffffff"} link={item.link}/>
-        </a>
+        </div>
       ))}
     </div>
     <hr className="border-[#374151]" />
