@@ -38,7 +38,7 @@ const openHandler = () => {
   </div>
  
   <div className={`absolute w-full bg-[#030712] z-0  transition-all duration-300 ease-linear ${open? "-top-[730px]" : "top-[86px]"}`} >
-    <div className="xl:w-[92%] 2xl:w-[67.5%] m-auto">
+    <div className="2xl:w-[71.5%] m-auto">
     <hr className="border-[#374151]" />
     <div className="pb-5">
       {items.map((item) => (
