@@ -40,7 +40,7 @@ function Stack() {
   ]
 
   return (
-    <section id="stack" className="font-inter-tight p-5 xl:px-[72px] mt-24 lg:mt-36">
+    <section id="stack" className="font-inter-tight p-5 xl:px-[72px] mt-24 lg:mt-24">
       <div className="2xl:w-[71.5%] m-auto">
       <Title title={"Tools & Technologies"} />
       <Subtext

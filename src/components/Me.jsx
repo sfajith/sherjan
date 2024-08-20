@@ -3,7 +3,7 @@ import Subtext from '../components/Subtext'
 
 function Me() {
   return (
-    <section id="about" className="p-5 lg:px-[72px] lg:mt-28">
+    <section id="about" className="p-5 lg:px-[72px] lg:mt-24">
       <div className="2xl:w-[71.5%] m-auto">
       <div className="flex flex-col lg:flex-row lg:gap-x-10 items-center">
       <div

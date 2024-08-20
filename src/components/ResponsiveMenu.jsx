@@ -1,6 +1,6 @@
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import UpButton from "./UpButton";
 import ArrowButtom from "./ArrowButtom";
 
@@ -13,12 +13,21 @@ function ResponsiveMenu() {
   ];
 
   const [open, setOpen] = useState(true)
+  const navRef = useRef(null)
 
-useEffect(()=>{
-  setOpen(true)
-},[])
+  useEffect(()=>{
+    let handler = (e) =>{
+      if(!navRef.current.contains(e.target)){
+        setOpen(true)
+      }
+    }
 
-//toggle
+    document.addEventListener('mousedown', handler)
+    return () =>{
+      document.removeEventListener('mousedown', handler);
+    }
+  },[open])
+
 
 const openHandler = () => {
   setOpen((prev) => !prev);
@@ -26,11 +35,13 @@ const openHandler = () => {
 
 
   return (
-    <nav className="font-inter-tight relative">
+    <nav ref={navRef} className="font-inter-tight relative">
 
   <div className={`relative z-10 flex justify-between items-center p-5 transition-colors duration-300 ease-linear ${open? "bg-[#fff]" : "bg-[#030712]"}`} >
     <div className="flex justify-between w-full items-center xl:w-[92%] 2xl:w-[67.3%] m-auto">
+      <a href="/sherjan">
       <img src={open ? "/sherjan/logo.png" : "/sherjan/logo-white.png"} alt="" width="100px" />
+      </a>
       <button onClick={openHandler} className={`px-6 py-3 rounded-full border ${open ? 'border-[#030712]' : 'border-white'}`}>
         {open ? <FiMenu className="text-xl text-[#030712]" /> : <MdClose className="text-xl text-white" />}
       </button>
