@@ -11,8 +11,8 @@ import { TbBrandVite } from "react-icons/tb";
 import { GoArrowRight } from "react-icons/go";
 function Porfolio() {
   return (
-    <section id="portfolio" className="font-inter-tight p-5 xl:px-[72px] mt-24 lg:mt-24">
-      <div className="2xl:w-[71.5%] m-auto">
+    <section id="portfolio" className="font-inter-tight p-5 mt-24 lg:mt-24">
+      <div className="2xl:w-[1440px] m-auto xl:px-[72px]">
       <Title title={"Discover my latest works"} />
       <Subtext
         text={
@@ -29,7 +29,7 @@ function Porfolio() {
           <Subtext
             text={
               "is a web application that streamlines task management using the Kanban method. It allows users to organize projects into columns and cards, featuring a modern interface and subtle animations.Developed with React and Tailwind CSS, the app includes a drag-and-drop functionality for moving cards between columns. This project demonstrates skills in creating practical and visually appealing solutions, ideal for desktop work environments."
-            } position={"lg:text-left"} a={<a href="#" className="text-[#b6bcc6] hover:text-red-300 transition-colors  ease-linear">Development walkthrough here</a>}
+            } position={"lg:text-left"} a={<a href="sherjan/kanbanease" target='_blank' className="text-[#b6bcc6] hover:text-red-300 transition-colors  ease-linear">Development walkthrough here</a>}
           /> 
           <div className="flex justify-between w-full items-center mt-4 lg:mt-7 ">
             <div className="flex gap-x-2 text-[#374151] text-2xl">

@@ -38,7 +38,7 @@ const openHandler = () => {
     <nav ref={navRef} className="font-inter-tight relative">
 
   <div className={`relative z-10 flex justify-between items-center p-5 transition-colors duration-300 ease-linear ${open? "bg-[#fff]" : "bg-[#030712]"}`} >
-    <div className="flex justify-between w-full items-center xl:w-[92%] 2xl:w-[67.3%] m-auto">
+    <div className="flex justify-between w-full items-center 2xl:w-[1433px] m-auto xl:px-[72px]">
       <a href="/sherjan">
       <img src={open ? "/sherjan/logo.png" : "/sherjan/logo-white.png"} alt="" width="100px" />
       </a>
@@ -65,12 +65,6 @@ const openHandler = () => {
     </div>
     <hr className="border-[#374151]" />
     <div className="px-5 pb-10">
-      <p className="mt-7 text-[22px] font-bold tracking-[0.02em] text-[#374151] text-left font-inter-tight">Follow Me.</p>
-      <div className="flex justify-between md:justify-start gap-x-10">
-        <UpButton text={'LINKEDIN'} color={'text-white'} hover={'text-[#b6bcc6]'}/>
-        <UpButton text={'GITHUB'} color={'text-white'} hover={'text-[#b6bcc6]'}/>
-        <UpButton text={'INSTAGRAM'} color={'text-white'} hover={'text-[#b6bcc6]'}/>
-      </div>
       <p className="text-[22px] font-[400] tracking-[0.02em] text-[#374151] text-left font-inter-tight">You're here, and that's a win for me</p>
     </div>
     </div>

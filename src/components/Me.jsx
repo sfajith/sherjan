@@ -3,8 +3,8 @@ import Subtext from '../components/Subtext'
 
 function Me() {
   return (
-    <section id="about" className="p-5 lg:px-[72px] lg:mt-24">
-      <div className="2xl:w-[71.5%] m-auto">
+    <section id="about" className="p-5 lg:mt-24">
+      <div className="2xl:w-[1440px] m-auto xl:px-[72px]">
       <div className="flex flex-col lg:flex-row lg:gap-x-10 items-center">
       <div
         className="w-full  h-[450px] lg:h-[400px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5"
