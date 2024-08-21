@@ -41,7 +41,7 @@ function Porfolio() {
               <RiTailwindCssFill className="transition-all duration-150 ease-linear hover:scale-150 hover:shadow-lg" />
               <TbBrandVite className="transition-all duration-150 ease-linear hover:scale-150 hover:shadow-lg" />
             </div>
-            <a href="/sherjan/KanbanEase/" target='_blank'
+            <a href="/sherjan/Kanbanease/" target='_blank'
               className={`border border-[#030712] px-5 py-2 rounded-full group`}
             >
               <GoArrowRight
