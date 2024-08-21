@@ -1,21 +1,8 @@
-import { Worker, Viewer } from '@react-pdf-viewer/core';
-import '@react-pdf-viewer/core/lib/styles/index.css'; // Importa los estilos básicos
-import { defaultLayoutPlugin } from '@react-pdf-viewer/default-layout';
-import '@react-pdf-viewer/default-layout/lib/styles/index.css'; // Importa los estilos del complemento
-
 
 function Pdfview() {
-    const pdfjsVersion = '3.11.174';
-    const defaultLayoutPluginInstance = defaultLayoutPlugin();
   return (
-
-<div style={{ height: '100vh'}}>
-      <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjsVersion}/build/pdf.worker.min.js`}>
-        <Viewer
-          fileUrl="/sherjan/KanbanEase.pdf"
-          plugins={[defaultLayoutPluginInstance]}
-        />
-      </Worker>
+    <div>
+     <iframe src='/sherjan/KanbanEase.pdf' width='100%' className="h-[100vh]"/>
     </div>
   )
 }
