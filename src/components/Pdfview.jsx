@@ -12,7 +12,7 @@ function Pdfview() {
 <div style={{ height: '100vh'}}>
       <Worker workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjsVersion}/build/pdf.worker.min.js`}>
         <Viewer
-          fileUrl="public/KanbanEase.pdf"
+          fileUrl="/sherjan/KanbanEase.pdf"
           plugins={[defaultLayoutPluginInstance]}
         />
       </Worker>
