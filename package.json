@@ -2,7 +2,6 @@
   "name": "portfolio",
   "type": "module",
   "version": "0.0.1",
-  "homepage": "https://sfajith.github.io/sherjan",
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
