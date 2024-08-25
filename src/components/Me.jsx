@@ -39,16 +39,16 @@ function Me() {
               text={
                 "I'm Sherjan, a front-end developer with a passion for creating intuitive and visually appealing web experiences. I focus on blending functionality with design to deliver solutions that captivate and engage users."
               }
-              position={"lg:text-left"}
+              position={"lg:text-left"} a={<button
+                className={`mt-2 xl:mt-0 text-[22px] font-bold tracking-[0.02em] text-[#030712] text-center lg:text-left font-inter-tighttop-24 hover:text-red-300`}
+                onClick={() => {
+                  handleOpen();
+                }}
+              >
+                Explore My Journey
+              </button>}
             />
-            <button
-              className={`mt-2 xl:mt-0 text-[22px] font-bold tracking-[0.02em] text-[#030712] text-center lg:text-left font-inter-tighttop-24 hover:text-red-300`}
-              onClick={() => {
-                handleOpen();
-              }}
-            >
-              Explore My Journey
-            </button>
+
           </div>
         </div>
         
