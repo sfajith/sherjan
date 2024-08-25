@@ -16,7 +16,7 @@ function Porfolio() {
       <Title title={"Discover my latest works"} />
       <Subtext
         text={
-          "Check out the projects that reflect my growth and passion for front-end development"
+          "Projects showcasing my journey and passion in front-end development"
         } 
       />
 
@@ -28,7 +28,7 @@ function Porfolio() {
           <h3 className="text-4xl font-semibold font-inter-tight text-center lg:text-left w-full">KanbanEase</h3>
           <Subtext
             text={
-              "is a web application that streamlines task management using the Kanban method. It allows users to organize projects into columns and cards, featuring a modern interface and subtle animations.Developed with React and Tailwind CSS, the app includes a drag-and-drop functionality for moving cards between columns. This project demonstrates skills in creating practical and visually appealing solutions, ideal for desktop work environments."
+              "KanbanEase is a web application designed to streamline task management using the Kanban method. Users can organize projects into columns and cards with a modern interface. Developed with React and Tailwind CSS, the app features drag-and-drop functionality for moving cards between columns. This project highlights my ability to create practical and visually appealing solutions, tailored for desktop work environments."
             } position={"lg:text-left"} a={<a 
               href="/sherjan/kanbanease" target='_blank' className="text-[#030712] font-bold hover:text-red-300 transition-colors  ease-linear">Development walkthrough here</a>}
           /> 

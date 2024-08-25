@@ -27,11 +27,11 @@ function Description() {
     <section id="home" className="font-inter-tight p-5 ">
       <div className="2xl:w-[1440px] m-auto xl:px-[72px]">
         <h3 className="text-[22px] md:text-[28px] font-[500] tracking-[0.02em] mb-3 md:pl-1">
-          Hello! Glad you're here!
+        Welcome! I'm thrilled to have you here!
         </h3>
         <h1 className="text-[64px] md:text-[104px] md:text-left leading-none font-bold text-[#030712] tracking-tight text-center lg:mt-5">
-          Designing seamless and engaging user interfaces
-          <span className="text-[#b6bcc6]"> for the web</span>
+        Creating Intuitive and Dynamic User Interfaces
+          <span className="text-[#b6bcc6]"> For the Web</span>
         </h1>
 
         <div className="flex flex-col justify-center ">
@@ -39,8 +39,7 @@ function Description() {
             <div className="flex gap-x-8">
               <hr className="border-[#b6bcc6] mb-7  w-2/3 lg:w-1/3 my-auto hidden md:block " />
               <p className="mt-7 md:text-left text-[22px] font-[400] tracking-[0.02em] text-[#374151] text-center font-inter-tight">
-                A passionate front-end developer committed to bringing ideas to
-                life through clean, effective code
+              As a dedicated front-end developer, I transform ideas into interactive and visually captivating web solutions through meticulous and efficient code
               </p>
             </div>
           </div>

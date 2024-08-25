@@ -11,7 +11,7 @@ function Education() {
     <section id='education' className="font-inter-tight p-5 mb-24 mt-24 lg:mt-20">
       <div className='2xl:w-[1440px] m-auto xl:px-[72px]'>
      <Title title={"Education"} />
-     <Subtext text={"Building a strong foundation in web development through continuous learning"}/>
+     <Subtext text={"Continuously expanding my knowledge and skills to excel in web development."}/>
      {
       formation.map(course => (
         <>

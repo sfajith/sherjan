@@ -45,7 +45,7 @@ function Stack() {
       <Title title={"Tools & Technologies"} />
       <Subtext
         text={
-          "A versatile stack that empowers me to create modern and intuitive web experiences"
+          "A versatile stack for crafting modern and intuitive web experiences."
         }
       />
       <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151]">

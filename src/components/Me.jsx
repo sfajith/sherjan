@@ -32,12 +32,12 @@ function Me() {
           </div>
           <div className="">
             <Title
-              title={"Design that sparks engagement and inspires action"}
+              title={"Designs That Encourage Engagement and Inspire Action"}
               position={"lg:text-left"}
             />
             <Subtext
               text={
-                "Concentrate on your primary objective which is expanding your business, and leave it to me to ensure that your business is efficiently portrayed in the digital realm and distinguishes itself from the rivals."
+                "I'm Sherjan, a front-end developer with a passion for creating intuitive and visually appealing web experiences. I focus on blending functionality with design to deliver solutions that captivate and engage users."
               }
               position={"lg:text-left"}
             />
@@ -47,7 +47,7 @@ function Me() {
                 handleOpen();
               }}
             >
-              {open ? "Know my journey" : "Close my journey"}
+              Explore My Journey
             </button>
           </div>
         </div>
