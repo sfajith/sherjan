@@ -7,7 +7,18 @@ export default {
 				// Agregar breakpoint personalizado para pantallas de 400px o menos
 				'xs': '300px',
 			},
+			keyframes: {
+				moveline: {
+				  '0%': { height: '0' },
+				  '100%': { height: '100%' },
+				},
+			  },
+			  animation: {
+				moveline: 'moveline 6s linear forwards',
+			  },
 		},
 	},
-	plugins: [],
+	plugins: [
+		require('tailwind-scrollbar'),
+	],
 }
