@@ -15,7 +15,7 @@ function TimeLine() {
     {
       id : 0,
       clase: "container left-container",
-      imagen: "public/images/uno.png",
+      imagen: "/sherjan/images/uno.png",
       titulo: "El Comienzo - De la Ingenieria al Codigo",
       fecha: "2018 - 2019",
       resumen:
@@ -26,7 +26,7 @@ function TimeLine() {
     {
       id : 1,
       clase: "container right-container",
-      imagen: "public/images/dos.png",
+      imagen: "/sherjan/images/dos.png",
       titulo: "La Transicion - De Estudiante a Emprendedor",
       fecha: "2018 - 2019",
       resumen:
@@ -37,7 +37,7 @@ function TimeLine() {
     {
       id : 2,
       clase: "container left-container",
-      imagen: "public/images/tres.png",
+      imagen: "/sherjan/images/tres.png",
       titulo: "El Quiebre - Redefiniendo Mi Camino",
       fecha: "2018 - 2019",
       resumen:
@@ -48,7 +48,7 @@ function TimeLine() {
     {
       id : 3,
       clase: "container right-container",
-      imagen: "public/images/cuatro.png",
+      imagen: "/sherjan/images/cuatro.png",
       titulo: "Los Primeros Logros - Construyendo Mi Base",
       fecha: "2018 - 2019",
       resumen:
@@ -60,7 +60,7 @@ function TimeLine() {
     {
       id : 4,
       clase: "container left-container",
-      imagen: "public/images/cinco.png",
+      imagen: "/sherjan/images/cinco.png",
       titulo: "Perfeccionando Mis Habilidades - De React a Astro",
       fecha: "2018 - 2019",
       resumen:
@@ -71,7 +71,7 @@ function TimeLine() {
     {
       id : 5,
       clase: "container right-container",
-      imagen: "public/images/seis.png",
+      imagen: "/sherjan/images/seis.png",
       titulo: "El Futuro - UI/UX y Mas Alla",
       fecha: "2018 - 2019",
       resumen:
