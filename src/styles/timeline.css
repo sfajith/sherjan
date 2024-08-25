@@ -139,7 +139,13 @@
 
   @media screen and (max-width: 640px){
 
+    .contenedorme{
+      min-width: 100%;
+      left: 0%;
+    }
+
     .timeline{
+      min-width: 100%;
       margin: 50px auto;
     }
     .timeline::after{

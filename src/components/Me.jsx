@@ -3,6 +3,7 @@ import Subtext from "../components/Subtext";
 import TimeLine from "../components/TimeLine";
 import { useEffect, useState } from "react";
 import { RiCloseLargeFill } from "react-icons/ri";
+import '../styles/timeline.css'
 
 function Me() {
   const [open, setOpen] = useState(true);
@@ -53,7 +54,7 @@ function Me() {
         
 
         <div
-          className={`justify-center ${
+          className={`justify-center contenedorme ${
             open ? "scale-0 fixed" : "scale-100 fixed flex top-20 left-[10%] w-[80%] h-5/6 bg-white rounded-xl z-50 overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-900 border shadow-2xl"
           } transition-all duration-300`}
         >
