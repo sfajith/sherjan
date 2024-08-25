@@ -16,10 +16,11 @@ function TimeLine() {
       id : 0,
       clase: "container left-container",
       imagen: "/sherjan/images/uno.png",
-      titulo: "El Comienzo - De la Ingenieria al Codigo",
-      fecha: "2018 - 2019",
+      titulo: "The Start - From Engineering to Code",
+      fecha: "2017",
       resumen:
-        "Empece mi carrera en ingenieria mecanica, donde desarrolle habilidades de logica y pensamiento estructurado. Sin embargo, mi verdadera pasion siempre estuvo en la tecnologia y la creatividad",
+        "My career began in mechanical engineering, where I developed a strong foundation in logic and structured thinking. However, my true passion has always been in technology and design, which led me to explore web development.",
+      more: "While working with a graphic designer friend, I gained skills in tools like Illustrator and Photoshop, sparking my interest in front-end development. This allowed me to combine design and functionality, something that has excited me from the start.",
       flecha: "left-container-arrow",
       open: false
     },
@@ -27,10 +28,11 @@ function TimeLine() {
       id : 1,
       clase: "container right-container",
       imagen: "/sherjan/images/dos.png",
-      titulo: "La Transicion - De Estudiante a Emprendedor",
-      fecha: "2018 - 2019",
+      titulo: "From Student to Entrepreneur",
+      fecha: "2018",
       resumen:
-        "Deje la universidad por falta de recursos economicos y funde junto con mi esposa una tienda en linea de calzado. Aunque la empresa fue exitosa inicialmente, enfrentamos desafios que me llevaron a explorar otras vias",
+        "I left university to start a footwear business with my wife. As we faced the challenges of entrepreneurship, I developed an order management tool in VBA, which introduced me to the world of programming.",
+        more: "Despite the difficulties, this experience taught me how to apply logic and management skills to programming, laying the groundwork for my future career in web development.",
       flecha: "right-container-arrow",
       open: false
     },
@@ -38,10 +40,11 @@ function TimeLine() {
       id : 2,
       clase: "container left-container",
       imagen: "/sherjan/images/tres.png",
-      titulo: "El Quiebre - Redefiniendo Mi Camino",
-      fecha: "2018 - 2019",
+      titulo: "Crisis and Rebirth - Facing Adversity",
+      fecha: "2022 - 2023",
       resumen:
-        " El negocio quebro, sumiéndonos en una crisis economica. Pero en medio de la adversidad, encontre en la programacion un nuevo proposito",
+        "After the business closed, I found a new opportunity to reinvent myself through programming. I decided to learn JavaScript and immerse myself in web development, despite the challenges.",
+      more:" It was a tough process, but my determination led me to complete courses and practice daily, viewing every small achievement as a victory.",  
       flecha: "left-container-arrow",
       open: false
     },
@@ -49,10 +52,11 @@ function TimeLine() {
       id : 3,
       clase: "container right-container",
       imagen: "/sherjan/images/cuatro.png",
-      titulo: "Los Primeros Logros - Construyendo Mi Base",
-      fecha: "2018 - 2019",
+      titulo: "Building My Technical Foundation - Early Achievements",
+      fecha: "2023",
       resumen:
-        "A medida que mejoraba en JavaScript, empece a completar proyectos en freeCodeCamp, desde una página de tributo hasta un visualizador de datos interactivo",
+        "As I honed my skills in JavaScript, I completed projects on FreeCodeCamp, from a simple tribute page to an interactive data visualizer. Each project represented a new challenge and an opportunity to apply what I had learned.",
+      more:"These projects solidified my knowledge in programming and gave me the confidence to continue advancing in my career as a web developer.",
       flecha: "right-container-arrow",
       open: false,
       codepen: <a className="text-red-300 font-bold" href="https://codepen.io/collection/kNZqvR?grid_type=grid&cursor=eyJwYWdlIjoxfQ==" target="_blank">See My Proyects</a>
@@ -61,10 +65,11 @@ function TimeLine() {
       id : 4,
       clase: "container left-container",
       imagen: "/sherjan/images/cinco.png",
-      titulo: "Perfeccionando Mis Habilidades - De React a Astro",
-      fecha: "2018 - 2019",
+      titulo: "From JavaScript to React - Expanding My Skillset",
+      fecha: "2023-2024",
       resumen:
-        "Domine herramientas como React, Next.js, y Astro, ampliando mi capacidad para crear aplicaciones modernas y eficientes",
+        "Currently, I am focused on perfecting my skills in modern tools like React, Next.js, and Astro. These skills have allowed me to develop projects like KanbanEase, which reflect not only my technical abilities but also my passion for creating intuitive and efficient user interfaces.",
+      more: "Additionally, I have learned to use Git and GitHub to manage and deploy projects, demonstrating my ability to work in collaborative environments and with modern development practices.",
       flecha: "left-container-arrow",
       open: false
     },
@@ -72,10 +77,11 @@ function TimeLine() {
       id : 5,
       clase: "container right-container",
       imagen: "/sherjan/images/seis.png",
-      titulo: "El Futuro - UI/UX y Mas Alla",
-      fecha: "2018 - 2019",
+      titulo: "Fullstack Development - Continuing the Learning Journey",
+      fecha: "2024 and more",
       resumen:
-        "Estoy enfocado en mejorar KanbanEase y avanzar en mi carrera, con el objetivo de especializarme en UI/UX front-end. Tambien estoy inscrito en un programa de analisis de software del SENA para seguir aprendiendo",
+        "My goal is to become a fullstack developer, with a focus on creating exceptional user experiences. To achieve this, I am enrolled in the Software Analysis program at SENA, which will allow me to expand my backend skills and complement my frontend knowledge.",
+      more:" I am committed to continuing to refine my skills in UI/UX and explore new opportunities that will allow me to grow as a developer.",
       flecha: "right-container-arrow",
       open: false
     },
@@ -95,7 +101,7 @@ function TimeLine() {
           </p>
           <p className={`${
     item.open ? 'max-h-28 opacity-100' : 'max-h-0 opacity-0'
-  } overflow-hidden transition-all duration-500 ease-in-out`}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus obcaecati, nam nihil accusamus molestias architecto? {item.codepen} </p>
+  } overflow-hidden transition-all duration-500 ease-in-out`}>{item.more} {item.codepen} </p>
           <button className={`text-[#030712] font-bold`} onClick={() =>{moreHandler(item.id)}}>{!item.open? 'Show More...': 'Show Less...'}</button>
           <span className={item.flecha}></span>
         </div>

@@ -52,7 +52,8 @@ function Me() {
           </div>
         </div>
         
-
+              <div className={open? '' : 'prueba'}>
+                
         <div
           className={`justify-center contenedorme ${
             open ? "scale-0 fixed" : "scale-100 fixed flex top-16 left-[10%] w-[80%] h-5/6 bg-white rounded-xl z-50 overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-900 border"
@@ -69,6 +70,7 @@ function Me() {
             >
               <RiCloseLargeFill className="text-white" />
             </button>
+            </div>
       </div>
     </section>
   );
