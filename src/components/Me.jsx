@@ -55,14 +55,14 @@ function Me() {
 
         <div
           className={`justify-center contenedorme ${
-            open ? "scale-0 fixed" : "scale-100 fixed flex top-20 left-[10%] w-[80%] h-5/6 bg-white rounded-xl z-50 overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-900 border shadow-2xl"
+            open ? "scale-0 fixed" : "scale-100 fixed flex top-16 left-[10%] w-[80%] h-5/6 bg-white rounded-xl z-50 overflow-y-scroll scrollbar-thin scrollbar-thumb-rounded scrollbar-thumb-gray-900 border"
           } transition-all duration-300`}
         >
           <TimeLine client:only="react" />
         </div>
 
         <button
-              className={`mt-2 xl:mt-0 text-[22px] font-[400] tracking-[0.02em] text-[#030712]  text-center lg:text-left font-inter-tight ${open ? "scale-0" : "scale-100"} fixed transition-all duration-300 top-[50px] right-[12%] z-50 bg-black px-4 rounded-md`}
+              className={`mt-2 xl:mt-0 text-[22px] font-[400] tracking-[0.02em] text-[#030712]  text-center lg:text-left font-inter-tight ${open ? "scale-0" : "scale-100"} fixed transition-all duration-300 top-[35px] right-[12%] z-50 bg-black px-4 rounded-md`}
               onClick={() => {
                 handleOpen();
               }}

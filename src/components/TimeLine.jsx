@@ -87,7 +87,7 @@ function TimeLine() {
         items.map((item) => (
           <div key={item.id} className={item.clase}>
         <img src={item.imagen} alt="" />
-        <div className="text-box shadow">
+        <div className="text-box">
           <h2>{item.titulo}</h2>
           <small>{item.fecha}</small>
           <p>
