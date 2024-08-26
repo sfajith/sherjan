@@ -69,10 +69,10 @@ function Description() {
               {email} <GoArrowUpRight className="ml-1 text-2xl" />
             </button>
           </div>
-          <button className="bg-[#030712] dark:bg-[#d1d5db] dark:text-[#030712] hover:dark:text-[#d1d5db]  text-white py-4 w-full rounded-full text-[22px] font-[600] flex justify-center items-center transition-all duration-300 ease-linear hover:bg-[#262628] hover:tracking-wider group lg:w-1/3">
+          <a href="/sherjan/Sherjan CV.pdf" download="Sherjan CV.pdf.pdf" className="bg-[#030712] dark:bg-[#d1d5db] dark:text-[#030712] hover:dark:text-[#d1d5db]  text-white py-4 w-full rounded-full text-[22px] font-[600] flex justify-center items-center transition-all duration-300 ease-linear hover:bg-[#262628] hover:tracking-wider group lg:w-1/3">
             Download Resume{" "}
             <LuDownload className="ml-2 transition-all duration-300 ease-linear group-hover:scale-110" />
-          </button>
+          </a>
         </div>
       </div>
     </section>

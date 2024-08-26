@@ -29,8 +29,9 @@ function Me() {
           <div className="w-full  h-[450px] lg:h-[400px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5">
             <img
               src="/sherjan/sherjan.jpg"
-              className="w-full h-full  object-cover object-top transition-transform duration-500 ease-in-out transform hover:scale-110 "
+              className="w-full h-full  object-cover object-top transition-transform duration-500 ease-in-out transform hover:scale-110"
             />
+
           </div>
           <div className="">
             <Title
