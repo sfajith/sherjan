@@ -16,6 +16,7 @@ function TimeLine() {
       id : 0,
       clase: "container left-container",
       imagen: "/sherjan/images/uno.png",
+      imagend:"/sherjan/images/unod.png",
       titulo: "The Start - From Engineering to Code",
       fecha: "2017",
       resumen:
@@ -28,6 +29,7 @@ function TimeLine() {
       id : 1,
       clase: "container right-container",
       imagen: "/sherjan/images/dos.png",
+      imagend:"/sherjan/images/dosd.png",
       titulo: "From Student to Entrepreneur",
       fecha: "2018",
       resumen:
@@ -40,6 +42,7 @@ function TimeLine() {
       id : 2,
       clase: "container left-container",
       imagen: "/sherjan/images/tres.png",
+      imagend:"/sherjan/images/tresd.png",
       titulo: "Crisis and Rebirth - Facing Adversity",
       fecha: "2022 - 2023",
       resumen:
@@ -52,6 +55,7 @@ function TimeLine() {
       id : 3,
       clase: "container right-container",
       imagen: "/sherjan/images/cuatro.png",
+      imagend:"/sherjan/images/cuatrod.png",
       titulo: "Building My Technical Foundation - Early Achievements",
       fecha: "2023",
       resumen:
@@ -65,6 +69,7 @@ function TimeLine() {
       id : 4,
       clase: "container left-container",
       imagen: "/sherjan/images/cinco.png",
+      imagend:"/sherjan/images/cincod.png",
       titulo: "From JavaScript to React - Expanding My Skillset",
       fecha: "2023-2024",
       resumen:
@@ -77,6 +82,7 @@ function TimeLine() {
       id : 5,
       clase: "container right-container",
       imagen: "/sherjan/images/seis.png",
+      imagend:"/sherjan/images/seisd.png",
       titulo: "Fullstack Development - Continuing the Learning Journey",
       fecha: "2024 and Beyond",
       resumen:
@@ -92,7 +98,8 @@ function TimeLine() {
       {
         items.map((item) => (
           <div key={item.id} className={item.clase}>
-        <img src={item.imagen} alt="" />
+        <img src={item.imagen} alt="" className="block dark:hidden"/>
+        <img src={item.imagend} alt="" className="hidden dark:block"/>
         <div className="text-box">
           <h2>{item.titulo}</h2>
           <small>{item.fecha}</small>
@@ -100,9 +107,9 @@ function TimeLine() {
             {item.resumen}
           </p>
           <p className={`${
-    item.open ? 'max-h-28 opacity-100' : 'max-h-0 opacity-0'
+    item.open ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
   } overflow-hidden transition-all duration-500 ease-in-out`}>{item.more} {item.codepen} </p>
-          <button className={`text-[#030712] font-bold`} onClick={() =>{moreHandler(item.id)}}>{!item.open? 'Show More...': 'Show Less...'}</button>
+          <button className={`text-[#030712] dark:text-[#d1d5db] font-bold`} onClick={() =>{moreHandler(item.id)}}>{!item.open? 'Show More...': 'Show Less...'}</button>
           <span className={item.flecha}></span>
         </div>
       </div>

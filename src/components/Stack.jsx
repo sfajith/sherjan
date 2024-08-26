@@ -48,7 +48,7 @@ function Stack() {
           "A versatile stack for crafting modern and intuitive web experiences."
         }
       />
-      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151]">
+      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151] dark:text-[#677385]">
         Frontend Development
       </h3>
 
@@ -56,7 +56,12 @@ function Stack() {
         {frontend.map((icon) => (
           <div
             key={icon.id}
-            className="flex items-left gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear hover:scale-110 hover:shadow-lg hover:text-[#030712] hover:bg-white"
+            className="flex items-left gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear 
+  border-border-light dark:border-border-dark
+  text-text-light dark:text-[#d1d5db]
+  bg-white dark:bg-[#232323]
+  hover:scale-110 hover:shadow-lg
+  hover:text-[#030712] dark:hover:text-[#d1d5db] hover:bg-white dark:hover:bg-[#232323]"
           >
             {icon.component}
             <span className="text-lg font-semibold">{icon.name}</span>
@@ -64,7 +69,7 @@ function Stack() {
         ))}
       </div>
 
-      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151]">
+      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151] dark:text-[#677385]">
         Version Control & Deployment
       </h3>
 
@@ -72,7 +77,13 @@ function Stack() {
         {version.map((icon) => (
           <div
             key={icon.id}
-            className="flex items-center gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear hover:scale-110 hover:shadow-lg hover:text-[#030712] hover:bg-white"
+            className="flex items-left gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear 
+  border-border-light dark:border-border-dark
+  text-text-light dark:text-[#d1d5db]
+  bg-white dark:bg-[#232323]
+  hover:scale-110 hover:shadow-lg
+  hover:text-[#030712] dark:hover:text-[#d1d5db] hover:bg-white dark:hover:bg-[#232323]"
+          
           >
             {icon.component}
             <span className="text-lg font-semibold">{icon.name}</span>
@@ -81,14 +92,20 @@ function Stack() {
       </div>
 
 
-      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151]">
+      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151] dark:text-[#677385]">
         Design & Tools
       </h3>
       <div className="grid grid-cols-1  sm:grid-cols-3  gap-4  font-inter-tight text-[#374151] py-5">
         {design.map((icon) => (
           <div
             key={icon.id}
-            className="flex items-center gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear hover:scale-110 hover:shadow-lg hover:text-[#030712] hover:bg-white" 
+            className="flex items-left gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear 
+  border-border-light dark:border-border-dark
+  text-text-light dark:text-[#d1d5db]
+  bg-white dark:bg-[#232323]
+  hover:scale-110 hover:shadow-lg
+  hover:text-[#030712] dark:hover:text-[#d1d5db] hover:bg-white dark:hover:bg-[#232323]"
+           
           >
             {icon.component}
             <span className="text-lg font-semibold">{icon.name}</span>

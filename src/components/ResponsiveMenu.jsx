@@ -37,13 +37,14 @@ const openHandler = () => {
   return (
     <nav ref={navRef} className="font-inter-tight relative">
 
-  <div className={`relative z-10 flex justify-between items-center p-5 transition-colors duration-300 ease-linear ${open? "bg-[#fff]" : "bg-[#030712]"}`} >
+  <div className={`relative z-10 flex justify-between items-center p-5 transition-colors duration-300 ease-linear ${open? "bg-[#fff] dark:bg-[#121212]" : "bg-[#030712]"}`} >
     <div className="flex justify-between w-full items-center 2xl:w-[1433px] m-auto xl:px-[72px]">
       <a href="/sherjan">
-      <img src={open ? "/sherjan/logo.png" : "/sherjan/logo-white.png"} alt="" width="100px" />
+      <img src={open ? "/sherjan/logo.png" : "/sherjan/logo-white.png"} alt="" width="100px" className="block dark:hidden"/>
+      <img src="/sherjan/logo-white.png" alt="" width="100px" className="hidden dark:block"/>
       </a>
-      <button onClick={openHandler} className={`px-6 py-3 rounded-full border ${open ? 'border-[#030712]' : 'border-white'}`}>
-        {open ? <FiMenu className="text-xl text-[#030712]" /> : <MdClose className="text-xl text-white" />}
+      <button onClick={openHandler} className={`px-6 py-3 rounded-full border ${open ? 'border-[#030712] dark:border-[#d1d5db]' : 'border-white'}`}>
+        {open ? <FiMenu className="text-xl text-[#030712] dark:text-[#d1d5db]" /> : <MdClose className="text-xl text-white" />}
       </button>
     </div>
   </div>

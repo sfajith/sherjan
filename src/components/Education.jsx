@@ -16,12 +16,12 @@ function Education() {
       formation.map(course => (
         <>
         <div className='flex justify-between items-center mt-10'>
-        <div className='mt-6'>
+        <div className='mt-6 text-[#030712] dark:text-[#d1d5db]'>
           <TitleMini text={course.name}/>
           <h4 className='font-inter-tight text-lg font-light'>{course.year} - freeCodeCamp</h4>
         </div>
         <a href={course.url} target='_blank'>
-        <div type="button" className='bg-[#f9fafb] transition-all ease-linear hover:text-gray-500 hover:scale-125 cursor-pointer rounded-full' ><GoArrowUpRight className="ml-1 text-2xl" /></div></a>
+        <div type="button" className='bg-[#f9fafb] dark:bg-[#1f2937] transition-all ease-linear hover:text-gray-500 dark:hover:text-gray-400 hover:scale-125 cursor-pointer rounded-full' ><GoArrowUpRight className="ml-1 text-2xl dark:text-[#f9fafb]" /></div></a>
       </div>
       <hr className='mt-5' />
       </>

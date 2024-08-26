@@ -16,7 +16,7 @@ const {title, description} = Astro.props
 		<meta name="generator" content={description} />
 		<title>{title}</title>
 	</head>
-	<body class="w-full m-0 p-0">
+	<body class="w-full m-0 p-0 dark:bg-[#121212]">
 		<ResponsiveMenu client:only="react"/>
 		<slot/>
 		<Footer />
@@ -28,6 +28,6 @@ html, body {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden; /* Esto ocultará cualquier contenido que se desborde horizontalmente */
+  overflow-x:hidden; /* Esto ocultará cualquier contenido que se desborde horizontalmente */
 }
 </style>
