@@ -1,31 +1,54 @@
-import { GoArrowUpRight } from "react-icons/go";
-import Subtext from "./Subtext";
+import { GoArrowUpRight } from 'react-icons/go';
+import Subtext from './Subtext';
 
 function Footer() {
   return (
     <section className="p-5 bg-[#030712] font-inter-tight flex flex-col justify-center text-center">
       <div className="text-white font-[500] text-2xl tracking-wide mt-5">
-        LIKED WHAT YOU SAW? LET'S GET IN TOUCH!
+        ¿BUSCAS UN DESARROLLADOR BACKEND-ORIENTED?
       </div>
       <h3 className=" text-4xl sm:text-5xl lg:text-[64px] leading-none font-bold text-white tracking-tight text-center mt-10">
         <span className="text-[#b6bcc6]">sfajith</span>
         @gmail.com
       </h3>
 
-      <a href="mailto:sfajith@gmail.com"  className="bg-[#1f2937] text-white transition-colors duration-300 ease-linear hover:text-gray-500 cursor-pointer w-16 h-16 flex justify-center items-center rounded-full m-auto mt-7">
+      <a
+        href="mailto:sfajith@gmail.com"
+        className="bg-[#1f2937] text-white transition-colors duration-300 ease-linear hover:text-gray-500 cursor-pointer w-16 h-16 flex justify-center items-center rounded-full m-auto mt-7"
+      >
         <GoArrowUpRight className="ml-1 text-4xl" />
       </a>
       <hr className="mt-5 border-none h-[1px] bg-[#636466]" />
       <div className="flex justify-center gap-x-5 mt-10 mb-5">
-        <a href="#home" className="text-white font-semibold text-sm underline transition-colors duration-300 ease-linear hover:text-[#b6bcc6]">HOME</a>
-        <a href="#about" className="text-white font-semibold text-sm underline transition-colors duration-300 ease-linear hover:text-[#b6bcc6]">ABOUT ME</a>
-        <a href="#portfolio" className="text-white font-semibold text-sm underline transition-colors duration-300 ease-linear hover:text-[#b6bcc6]">WORKS</a>
-        <a href="#stack" className="text-white font-semibold text-sm underline transition-colors duration-300 ease-linear hover:text-[#b6bcc6]">STACK</a>
+        <a
+          href="#home"
+          className="text-white font-semibold text-sm underline transition-colors duration-300 ease-linear hover:text-[#b6bcc6]"
+        >
+          INICIO
+        </a>
+        <a
+          href="#about"
+          className="text-white font-semibold text-sm underline transition-colors duration-300 ease-linear hover:text-[#b6bcc6]"
+        >
+          SOBRE MI
+        </a>
+        <a
+          href="#portfolio"
+          className="text-white font-semibold text-sm underline transition-colors duration-300 ease-linear hover:text-[#b6bcc6]"
+        >
+          PROYECTOS
+        </a>
+        <a
+          href="#stack"
+          className="text-white font-semibold text-sm underline transition-colors duration-300 ease-linear hover:text-[#b6bcc6]"
+        >
+          STACK
+        </a>
       </div>
-      <Subtext text={"Striving for progress, one step at a time"}/>
+      <Subtext text={'La disciplina sostiene el progreso'} />
       <hr className="my-10 border-none h-[1px] bg-[#636466]" />
       <div className="text-[#636466] font-[500] text-sm tracking-wide mt-5">
-      Crafted with passion and precision. 2024 Sherjan.
+        Hecho con pasión y precisión. 2026 Sherjan.
       </div>
     </section>
   );

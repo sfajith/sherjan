@@ -1,117 +1,91 @@
-import Title from "../components/Title";
-import Subtext from "./Subtext";
-import { IoLogoJavascript } from "react-icons/io";
-import { ImHtmlFive2 } from "react-icons/im";
-import { FaCss3 } from "react-icons/fa6";
-import { SiAstro } from "react-icons/si";
-import { RiReactjsLine, RiTailwindCssFill, RiBootstrapLine } from "react-icons/ri";
-import { TbBrandGithubFilled, TbBrandNextjs } from "react-icons/tb";
-import { BiLogoPostgresql } from "react-icons/bi";
-import { SiAdobephotoshop, SiAdobeillustrator, SiGnubash, SiD3Dotjs  } from "react-icons/si";
-import { FaWordpress, FaGitAlt } from "react-icons/fa";
+import Title from '../components/Title';
+import Subtext from './Subtext';
+import { IoLogoJavascript } from 'react-icons/io';
+import { ImHtmlFive2 } from 'react-icons/im';
+import { FaCss3 } from 'react-icons/fa6';
+import { SiAstro } from 'react-icons/si';
+import {
+  RiReactjsLine,
+  RiTailwindCssFill,
+  RiBootstrapLine,
+} from 'react-icons/ri';
+import { TbBrandGithubFilled, TbBrandNextjs } from 'react-icons/tb';
+import { BiLogoPostgresql } from 'react-icons/bi';
+import {
+  SiAdobephotoshop,
+  SiAdobeillustrator,
+  SiGnubash,
+  SiD3Dotjs,
+} from 'react-icons/si';
+import { FaWordpress, FaGitAlt } from 'react-icons/fa';
+import V22Card from './V22Card';
+import { FiDatabase } from 'react-icons/fi';
+import { IoCloudDoneOutline } from 'react-icons/io5';
+import { CgScreen } from 'react-icons/cg';
 
+const data = [
+  {
+    Backend: [
+      {
+        id: 0,
+        text: 'Node.js, Express, Nest.js',
+      },
+      {
+        id: 1,
+        text: 'MongoDB (transactions, replica set)',
+      },
+      {
+        id: 2,
+        text: 'Redis, JWT',
+      },
+      {
+        id: 3,
+        text: 'OpenAPI / Swagger (API documentation)',
+      },
+    ],
+    icon: <FiDatabase className="min-w-8 min-h-8 text-gray-400" />,
+  },
+  {
+    Infra: [
+      {
+        id: 0,
+        text: 'Docker, Fly.io',
+      },
+      {
+        id: 1,
+        text: 'Cloudflare Workers',
+      },
+      {
+        id: 2,
+        text: 'AWS S3',
+      },
+    ],
+    icon: <IoCloudDoneOutline className="min-w-8 min-h-8 text-gray-400" />,
+  },
+  {
+    Frontend: [
+      {
+        id: 0,
+        text: 'React, React Native, Vite, Redux, Tailwind',
+      },
+      {
+        id: 1,
+        text: 'UX orientado a producto',
+      },
+    ],
+    icon: <CgScreen className="min-w-8 min-h-8 text-gray-400" />,
+  },
+];
 
 function Stack() {
-  const frontend = [
-    { id: 1, component: <ImHtmlFive2 />, name: "HTML" },
-    { id: 2, component: <FaCss3 />, name: "CSS" },
-    { id: 3, component: <IoLogoJavascript />, name: "JavaScript" },
-    { id: 4, component: <RiReactjsLine />, name: "React" },
-    { id: 5, component: <RiTailwindCssFill />, name: "Tailwind CSS" },
-    { id: 6, component: <SiAstro />, name: "Astro" },
-    { id: 7, component: <TbBrandNextjs />, name: "Next.js" },
-    { id: 8, component: <SiD3Dotjs />, name: "D3.js" },
-  ];
-
-  const version = [
-    { id: 1, component: <FaGitAlt />, name: "Git" },
-    { id: 2, component: <TbBrandGithubFilled />, name: "GitHub" },
-  ];
-
-  const backend = [
-    { id: 1, component: <SiGnubash />, name: "Bash" },
-    { id: 2, component: <BiLogoPostgresql />, name: "PostgreSQL" },
-  ];
-
-  const design = [
-    { id: 1, component: <FaWordpress />, name: "Wordpress" },
-    { id: 2, component: <SiAdobephotoshop />, name: "Adobe Photoshop" },
-    { id: 2, component: <SiAdobeillustrator />, name: "Adobe Illustrator" },
-  ]
-
   return (
     <section id="stack" className="font-inter-tight p-5 mt-24 lg:mt-24">
       <div className="2xl:w-[1440px] m-auto xl:px-[72px]">
-      <Title title={"Tools & Technologies"} />
-      <Subtext
-        text={
-          "A versatile stack for crafting modern and intuitive web experiences."
-        }
-      />
-      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151] dark:text-[#677385]">
-        Frontend Development
-      </h3>
-
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4  font-inter-tight text-[#374151] py-5">
-        {frontend.map((icon) => (
-          <div
-            key={icon.id}
-            className="flex items-left gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear 
-  border-border-light dark:border-border-dark
-  text-text-light dark:text-[#d1d5db]
-  bg-white dark:bg-[#232323]
-  hover:scale-110 hover:shadow-lg
-  hover:text-[#030712] dark:hover:text-[#d1d5db] hover:bg-white dark:hover:bg-[#232323]"
-          >
-            {icon.component}
-            <span className="text-lg font-semibold">{icon.name}</span>
-          </div>
-        ))}
-      </div>
-
-      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151] dark:text-[#677385]">
-        Version Control & Deployment
-      </h3>
-
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4  font-inter-tight text-[#374151] py-5">
-        {version.map((icon) => (
-          <div
-            key={icon.id}
-            className="flex items-left gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear 
-  border-border-light dark:border-border-dark
-  text-text-light dark:text-[#d1d5db]
-  bg-white dark:bg-[#232323]
-  hover:scale-110 hover:shadow-lg
-  hover:text-[#030712] dark:hover:text-[#d1d5db] hover:bg-white dark:hover:bg-[#232323]"
-          
-          >
-            {icon.component}
-            <span className="text-lg font-semibold">{icon.name}</span>
-          </div>
-        ))}
-      </div>
-
-
-      <h3 className="text-2xl font-semibold text-center lg:text-left my-10 font-inter-tight text-[#374151] dark:text-[#677385]">
-        Design & Tools
-      </h3>
-      <div className="grid grid-cols-1  sm:grid-cols-3  gap-4  font-inter-tight text-[#374151] py-5">
-        {design.map((icon) => (
-          <div
-            key={icon.id}
-            className="flex items-left gap-x-3 text-4xl p-4 border rounded transition-all duration-150 ease-linear 
-  border-border-light dark:border-border-dark
-  text-text-light dark:text-[#d1d5db]
-  bg-white dark:bg-[#232323]
-  hover:scale-110 hover:shadow-lg
-  hover:text-[#030712] dark:hover:text-[#d1d5db] hover:bg-white dark:hover:bg-[#232323]"
-           
-          >
-            {icon.component}
-            <span className="text-lg font-semibold">{icon.name}</span>
-          </div>
-        ))}
-      </div>
+        <Title title={'Arquitectura & Skills'} />
+        <Subtext
+          text={'Tecnologías y decisiones técnicas aplicadas en producción.'}
+        />
+        <V22Card data={data} />
       </div>
     </section>
   );

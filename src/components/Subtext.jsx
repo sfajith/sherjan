@@ -1,10 +1,11 @@
-
-function Subtext({text, position, a}) {
+function Subtext({ text, position, a }) {
   return (
-    <p className={`mt-2 xl:mt-0 text-[22px] font-[400] tracking-[0.02em] text-[#374151] dark:text-[#B0B9BF] text-center lg:text-left font-inter-tight ${position}`}>
-    {text}  {a}
-  </p>
-  )
+    <p
+      className={`mt-2 xl:mt-0 text-[22px] font-[400] tracking-[0.02em] text-[#374151] dark:text-[#B0B9BF] text-center lg:text-left font-inter-tight ${position}`}
+    >
+      {text} {a}
+    </p>
+  );
 }
 
-export default Subtext
+export default Subtext;
