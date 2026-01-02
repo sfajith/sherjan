@@ -78,8 +78,8 @@ function Description() {
             </button>
           </div>
           <a
-            href="/sherjan/sherjancv.pdf"
-            download="sherjancv.pdf"
+            href="/sherjan/sherjanCV.pdf"
+            download="sherjanCV.pdf"
             className="bg-[#030712] dark:bg-[#d1d5db] dark:text-[#030712] hover:dark:text-[#d1d5db]  text-white py-4 w-full rounded-full text-[22px] font-[600] flex justify-center items-center transition-all duration-300 ease-linear hover:bg-[#262628] hover:tracking-wider group lg:w-1/3"
           >
             Descargar CV{' '}
