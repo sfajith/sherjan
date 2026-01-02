@@ -37,9 +37,18 @@ function Projects() {
             </div>
           </div>
           <div className="flex flex-col lg:flex-row lg:gap-x-10 items-center lg:w-[50%]">
-            <div className="">
+            {/* Imagen primero en mobile, segundo en lg */}
+            <div className="min-w-[250px] h-[450px] lg:h-[375px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5 order-1 lg:order-2">
+              <img
+                src="/kanban.jpg"
+                className="w-full h-full object-cover transition-transform duration-500 ease-in-out transform hover:scale-110"
+              />
+            </div>
+
+            {/* Texto primero en lg, segundo en mobile */}
+            <div className="order-2 lg:order-1">
               <TitleMini text={'KanbanEase'} position={'lg:text-right'} />
-              <div className="mt-4  text-[18px] font-[400] tracking-[0.02em] text-[#374151] dark:text-[#B0B9BF] text-center font-inter-tight lg:text-right">
+              <div className="mt-4 text-[18px] font-[400] tracking-[0.02em] text-[#374151] dark:text-[#B0B9BF] text-center font-inter-tight lg:text-right">
                 Proyecto frontend desarrollado para fortalecer habilidades en
                 React y diseño de interfaces. Inspirado en tableros Kanban tipo
                 Trello, enfocado en la gestión visual de tareas, manejo de
@@ -49,17 +58,11 @@ function Projects() {
                 <a
                   href="https://sfajith.github.io/KanbanEase/"
                   target="_blank"
-                  className="bg-[#030712] dark:bg-[#d1d5db] dark:text-[#030712] hover:dark:text-[#d1d5db] text-white py-4  rounded-full text-[18px] font-[600] flex justify-center items-center transition-all duration-300 ease-linear hover:bg-[#262628] hover:tracking-wider group w-1/2 text-center px-5"
+                  className="bg-[#030712] dark:bg-[#d1d5db] dark:text-[#030712] hover:dark:text-[#d1d5db] text-white py-4 rounded-full text-[18px] font-[600] flex justify-center items-center transition-all duration-300 ease-linear hover:bg-[#262628] hover:tracking-wider group w-1/2 text-center px-5"
                 >
                   Ver Proyecto
                 </a>
               </div>
-            </div>
-            <div className="min-w-[250px]  h-[450px] lg:h-[375px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5">
-              <img
-                src="/kanban.jpg"
-                className="w-full h-full object-cover  transition-transform duration-500 ease-in-out transform hover:scale-110"
-              />
             </div>
           </div>
         </div>
