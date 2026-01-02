@@ -6,8 +6,7 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
   integrations: [react(), tailwind()],
-  site: 'https://sfajith.github.io',
-  base: '/sherjan',
+  site: 'https://sherjan.dev',
   server: {
     port: 4321, // o cualquier puerto
     open: true, // abre el navegador automáticamente
