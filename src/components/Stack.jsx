@@ -42,6 +42,10 @@ const data = [
         id: 3,
         text: 'OpenAPI / Swagger (API documentation)',
       },
+      {
+        id: 4,
+        text: 'Testing & Observability',
+      },
     ],
     icon: <FiDatabase className="min-w-8 min-h-8 text-gray-400" />,
   },

@@ -8,8 +8,8 @@ function Projects() {
       <div className="2xl:w-[1440px] m-auto xl:px-[72px]">
         <Title title={'Otros proyectos'} position={'lg:text-left'} />
         <Subtext text={'Exploraciones técnicas y proyectos complementarios.'} />
-        <div className="flex flex-col lg:flex-row lg:gap-x-5">
-          <div className="flex flex-col lg:flex-row lg:gap-x-10 items-center lg:w-[50%] mb-10">
+        <div className="flex flex-col lg:flex-row lg:gap-x-5 lg:items-center">
+          <div className="flex flex-col lg:flex-row lg:gap-x-10 items-center lg:w-[50%] mb-10 lg:mb-0">
             <div className="min-w-[250px]  h-[450px] lg:h-[375px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5">
               <img
                 src="/phone.jpg"
@@ -22,11 +22,12 @@ function Projects() {
                 position={'lg:text-left'}
               />
               <div className="mt-4 text-[18px] font-[400] tracking-[0.02em] text-[#374151] dark:text-[#B0B9BF] text-center font-inter-tight lg:text-left">
-                Desarrollo del MVP mobile de una plataforma de hospedaje.
-                Arquitectura diseñada desde cero, frontend construido en React
-                Native e integración con servicios backend desacoplados. Enfoque
-                en mantenibilidad, seguridad y preparación para escalar a
-                producción. Responsable del diseño técnico y desarrollo del MVP.
+                Desarrollo del MVP mobile de una plataforma de hospedaje con
+                React Native, integrando servicios backend desacoplados. Enfoque
+                en mantenibilidad, seguridad y calidad técnica, con pruebas
+                automatizadas en flujos críticos y logging estructurado para
+                facilitar debugging y evolución del producto. Responsable del
+                diseño técnico y desarrollo completo del MVP.
               </div>
               <div className="w-1/4 lg:w-1/2 flex justify-center border rounded-xl bg-[#B0B9BF] ">
                 <h4 className=" text-white text-[12px] font-inter-tight">

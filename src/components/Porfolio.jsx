@@ -172,6 +172,12 @@ function Porfolio() {
                     API documentada con OpenAPI (Swagger)
                   </span>
                 </li>
+                <li className="mt-3 flex flex-row gap-x-2 items-center">
+                  <div className="min-w-2 min-h-2 rounded-full bg-[#374151] dark:bg-[#B0B9BF]" />
+                  <span className="text-[#374151] dark:text-[#B0B9BF] leading-none font-inter-tight font-[400] text-lg">
+                    Deuda técnica controlada propia de un producto en evolución
+                  </span>
+                </li>
               </ul>
             </div>
 

@@ -1,6 +1,35 @@
+import HowCard from './HowCard';
 import Subtext from './Subtext';
 import Title from './Title';
 import TitleMini from './TitleMini';
+
+const datos = [
+  {
+    id: 0,
+    number: '01',
+    text: 'Arquitectura desde el día uno',
+  },
+  {
+    id: 1,
+    number: '02',
+    text: 'Seguridad integrada al diseño',
+  },
+  {
+    id: 2,
+    number: '03',
+    text: 'MVP primero, escalar después',
+  },
+  {
+    id: 3,
+    number: '04',
+    text: 'Código mantenible',
+  },
+  {
+    id: 4,
+    number: '05',
+    text: 'Calidad y observabilidad en producción',
+  },
+];
 
 function HowWork() {
   return (
@@ -10,54 +39,9 @@ function HowWork() {
         <Subtext text={'Principios que guían mis decisiones técnicas.'} />
 
         <div className="flex flex-col lg:flex-row mt-5 gap-x-2">
-          <div className="flex flex-col lg:flex-row items-start pl-10 lg:pl-0 mb-5 lg:mb-0">
-            <div className="flex flex-row items-end gap-2">
-              <h3 className="text-[64px] md:text-[70px] md:text-left leading-none font-bold text-[#030712] dark:text-[#d1d5db] tracking-tight text-center lg:mt-5">
-                <span className="text-[#b6bcc6] dark:text-[#49535e] font-inter-tight  font-light">
-                  01
-                </span>
-              </h3>
-              <h3 className="text-4xl lg:text-2xl font-semibold font-inter-tight text-left w-full text-[#374151] dark:text-[#B0B9BF]">
-                Arquitectura desde el día uno
-              </h3>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row items-start pl-10 lg:pl-0 mb-5 lg:mb-0">
-            <div className="flex flex-row items-end gap-2">
-              <h3 className="text-[64px] md:text-[70px] md:text-left leading-none font-bold text-[#030712] dark:text-[#d1d5db] tracking-tight text-center lg:mt-5">
-                <span className="text-[#b6bcc6] dark:text-[#49535e] font-inter-tight  font-light">
-                  02
-                </span>
-              </h3>
-              <h3 className="text-4xl lg:text-2xl font-semibold font-inter-tight text-left w-full text-[#374151] dark:text-[#B0B9BF]">
-                Seguridad integrada al diseño
-              </h3>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row items-start pl-10 lg:pl-0 mb-5 lg:mb-0">
-            <div className="flex flex-row items-end gap-2">
-              <h3 className="text-[64px] md:text-[70px] md:text-left leading-none font-bold text-[#030712] dark:text-[#d1d5db] tracking-tight text-center lg:mt-5">
-                <span className="text-[#b6bcc6] dark:text-[#49535e] font-inter-tight  font-light">
-                  03
-                </span>
-              </h3>
-              <h3 className="text-4xl lg:text-2xl font-semibold font-inter-tight text-left w-full text-[#374151] dark:text-[#B0B9BF]">
-                MVP primero, escalar después
-              </h3>
-            </div>
-          </div>
-          <div className="flex flex-col lg:flex-row items-start pl-10 lg:pl-0 mb-5 lg:mb-0">
-            <div className="flex flex-row items-end gap-2">
-              <h3 className="text-[64px] md:text-[70px] md:text-left leading-none font-bold text-[#030712] dark:text-[#d1d5db] tracking-tight text-center lg:mt-5">
-                <span className="text-[#b6bcc6] dark:text-[#49535e] font-inter-tight  font-light">
-                  04
-                </span>
-              </h3>
-              <h3 className="text-4xl lg:text-2xl font-semibold font-inter-tight text-left w-full text-[#374151] dark:text-[#B0B9BF]">
-                Código mantenible
-              </h3>
-            </div>
-          </div>
+          {datos.map(item => (
+            <HowCard key={item.id} number={item.number} text={item.text} />
+          ))}
         </div>
       </div>
     </section>
