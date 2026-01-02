@@ -29,7 +29,7 @@ function Me() {
         <div className="flex flex-col lg:flex-row lg:gap-x-10 items-center">
           <div className="w-full  h-[450px] lg:h-[400px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5">
             <img
-              src="/sherjan/sherjanf.jpeg"
+              src="/sherjanf.jpeg"
               className="w-full h-full  object-cover object-[50%_30%]lg:object-[50%_90%] transition-transform duration-500 ease-in-out transform hover:scale-110"
             />
           </div>

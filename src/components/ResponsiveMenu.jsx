@@ -39,15 +39,15 @@ function ResponsiveMenu() {
         }`}
       >
         <div className="flex justify-between w-full items-center 2xl:w-[1433px] m-auto xl:px-[72px]">
-          <a href="/sherjan">
+          <a href="/">
             <img
-              src={open ? '/sherjan/logo.png' : '/sherjan/logo-white.png'}
+              src={open ? '/logo.png' : '/logo-white.png'}
               alt=""
               width="100px"
               className="block dark:hidden"
             />
             <img
-              src="/sherjan/logo-white.png"
+              src="/logo-white.png"
               alt=""
               width="100px"
               className="hidden dark:block"

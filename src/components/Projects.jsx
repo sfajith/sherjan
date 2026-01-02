@@ -12,7 +12,7 @@ function Projects() {
           <div className="flex flex-col lg:flex-row lg:gap-x-10 items-center lg:w-[50%] mb-10">
             <div className="min-w-[250px]  h-[450px] lg:h-[375px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5">
               <img
-                src="/sherjan/phone.jpg"
+                src="/phone.jpg"
                 className="w-full h-full object-cover  transition-transform duration-500 ease-in-out transform hover:scale-110"
               />
             </div>
@@ -56,7 +56,7 @@ function Projects() {
             </div>
             <div className="min-w-[250px]  h-[450px] lg:h-[375px] bg-cover bg-no-repeat overflow-hidden rounded-[3%] my-5">
               <img
-                src="/sherjan/kanban.jpg"
+                src="/kanban.jpg"
                 className="w-full h-full object-cover  transition-transform duration-500 ease-in-out transform hover:scale-110"
               />
             </div>
