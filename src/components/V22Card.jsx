@@ -17,7 +17,7 @@ function V22Card({ data }) {
           return (
             <div
               key={index}
-              className="lg:w-[26rem] lg:min-h-[12rem] w-[70%] rounded-[3%] flex justify-start  p-5 flex-col"
+              className="lg:w-[26rem] lg:min-h-[12rem] w-[90%] rounded-[3%] flex justify-start  p-5 flex-col"
             >
               <div className="flex flex-row gap-x-3 items-center">
                 {item.icon}

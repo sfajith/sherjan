@@ -29,7 +29,7 @@ function Projects() {
                 facilitar debugging y evolución del producto. Responsable del
                 diseño técnico y desarrollo completo del MVP.
               </div>
-              <div className="w-1/4 lg:w-1/2 flex justify-center border rounded-xl bg-[#B0B9BF] ">
+              <div className="w-1/3 lg:w-1/2 flex justify-center border rounded-xl bg-[#B0B9BF] ">
                 <h4 className=" text-white text-[12px] font-inter-tight">
                   Startup (no público)
                 </h4>
