@@ -55,7 +55,7 @@ function Description() {
         <div className="mt-7 flex flex-col lg:flex-row justify-between  gap-8 items-center">
           <div className="flex flex-row justify-end lg:mt-0 gap-x-5 items-center">
             <UpButton
-              link={'https://www.linkedin.com/in/sherjan-marun-291163278/'}
+              link={'https://www.linkedin.com/in/sherjanm/'}
               text={'LINKEDIN'}
               color={'text-[#030712] dark:text-[#d1d5db]'}
               hover={'text-[#b6bcc6]'}
